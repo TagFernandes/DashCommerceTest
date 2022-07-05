@@ -1,0 +1,25 @@
+const btn = document.querySelector('#butt');
+
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const username = document.querySelector("#username");
+    const usernameValue = username.value;
+
+    const password = document.querySelector("#password");
+    const passwordValue = password.value;
+    
+    
+    if (usernameValue == "dashcommerce" && passwordValue == "chooseMe")
+    {
+        alert("My full name is Thiago Fernandes Carvalho de Souza. I want this job!")
+    }
+    else
+    {
+        alert("Wrong credentials.")
+        
+    }
+    
+    username.value = "";
+    password.value = "";
+});
